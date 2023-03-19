@@ -166,7 +166,7 @@ function VideoWithText() {
   autoPlay
   loop
   muted
-  className="object-cover h-full w-full absolute -z-10 filter contrast-80"
+  className="object-cover h-full w-full absolute -z-10 filter brightness-60 contrast-80"
 />
 
 

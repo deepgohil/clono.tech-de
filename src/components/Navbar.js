@@ -11,8 +11,8 @@
 //     //       <div className="hidden md:block">
 //     //         <div className="ml-10 flex items-baseline">
 //     //           <a href="#" className="px-3 py-2 rounded-md text-xl font-medium text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Home</a>
-//     //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">About</a>
-//     //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Contact</a>
+//     //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">About</a>
+//     //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Contact</a>
 //     //         </div>
 //     //       </div>
 //     //     </div>
@@ -42,10 +42,10 @@ const Navbar = () => {
     //       </div>
     //       <div className="hidden md:block">
     //         <div className="ml-10 flex items-baseline">
-    //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">Home</a>
-    //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">About</a>
-    //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">Contact</a>
-    //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">About</a>
+    //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">Home</a>
+    //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">About</a>
+    //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">Contact</a>
+    //           <a href="#" className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">About</a>
     //         </div>
     //       </div>
     //     </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
         <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 <a href="javascript:void(0)">
-                    <h2 className="text-2xl font-bold text-gray-300">LOGO</h2>
+                    <h2 className="text-2xl font-bold text-[#F6F1F1]">LOGO</h2>
                 </a>
                 <div className="md:hidden">
                     <button
@@ -103,16 +103,16 @@ const Navbar = () => {
                 }`}
             >
                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                    <li className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">
+                    <li className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">
                         <a href="javascript:void(0)">Home</a>
                     </li>
-                    <li className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">
+                    <li className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">
                         <a href="javascript:void(0)">Blog</a>
                     </li>
-                    <li className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">
+                    <li className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">
                         <a href="javascript:void(0)">About US</a>
                     </li>
-                    <li className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-gray-300 hover:underline hover:underline-offset-8 hover:underline-position-y-3">
+                    <li className="ml-4 px-3 py-2 rounded-md text-xl font-medium text-[#F6F1F1] hover:underline hover:underline-offset-8 hover:underline-position-y-3">
                         <a href="javascript:void(0)">Contact US</a>
                     </li>
                 </ul>
