@@ -145,16 +145,33 @@ import Navbar from './Navbar';
 
 function VideoWithText() {
   return (
-    <div className="relative">
-      <video className="w-full" autoPlay loop muted>
-<source src={video} type="video/mp4" />
-Your browser does not support the video tag.
-</video>
-      <Navbar />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-        {/* Your content goes here */}
-      </div>
-    </div>
+//     <div className="relative">
+//       <video className="w-full" autoPlay loop muted>
+// <source src={video} type="video/mp4" />
+// Your browser does not support the video tag.
+// </video>
+//       <Navbar />
+//       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+//         {/* Your content goes here */}
+//       </div>
+//     </div>
+///////////////////////////////RESPONNSIVE video
+<>
+<Navbar/>
+<div className="flex items-end justify-center w-full h-screen text-center">
+
+<video
+  
+  src={video}
+  autoPlay
+  loop
+  muted
+  className="object-cover h-full w-full absolute -z-10 filter contrast-80"
+/>
+
+
+</div>
+</>
   );
 }
 
