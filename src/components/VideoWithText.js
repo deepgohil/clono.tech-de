@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 
 // function VideoWithText() {
 //   const [openNav, setOpenNav] = useState(false);
- 
+
 //   useEffect(() => {
 //     window.addEventListener(
 //       "resize",
@@ -142,36 +142,41 @@ import { useState, useEffect } from "react";
 
 import React from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
+import Hero from './Hero';
+import Cards from './Cards';
 
 function VideoWithText() {
   return (
-//     <div className="relative">
-//       <video className="w-full" autoPlay loop muted>
-// <source src={video} type="video/mp4" />
-// Your browser does not support the video tag.
-// </video>
-//       <Navbar />
-//       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-//         {/* Your content goes here */}
-//       </div>
-//     </div>
-///////////////////////////////RESPONNSIVE video
-<>
-<Navbar/>
-<div className="flex items-end justify-center w-full h-screen text-center">
+    //     <div className="relative">
+    //       <video className="w-full" autoPlay loop muted>
+    // <source src={video} type="video/mp4" />
+    // Your browser does not support the video tag.
+    // </video>
+    //       <Navbar />
+    //       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+    //         {/* Your content goes here */}
+    //       </div>
+    //     </div>
+    ///////////////////////////////RESPONNSIVE video
+    <>
+      <Navbar />
+      <div className="flex items-end justify-center w-full h-screen text-center">
 
-<video
-  
-  src={video}
-  autoPlay
-  loop
-  muted
-  className="object-cover h-full w-full absolute -z-10 filter brightness-60 contrast-80"
-/>
+        <video
 
+          src={video}
+          autoPlay
+          loop
+          muted
+          className="object-cover h-full w-full absolute -z-10 filter brightness-60 contrast-80"
+        />
 
-</div>
-</>
+<Hero/>
+      </div>
+      <Cards/>
+      <Footer/>
+    </>
   );
 }
 

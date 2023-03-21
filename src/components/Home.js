@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer';
 import VideoWithText from './VideoWithText';
 
 
@@ -50,6 +51,7 @@ function Home() {
     <div className="flex justify-center items-center min-h-screen bg-gray-900">
     <div className="flex flex-wrap justify-center">
       <GradientCard  />
+      <Footer/>
     </div>
 
   </div>
