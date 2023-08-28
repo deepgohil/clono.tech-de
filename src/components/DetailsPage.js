@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 const DetailsPage = () => {
@@ -6,33 +6,25 @@ const DetailsPage = () => {
   const [details, setDetails] = useState(null);
 
   useEffect(() => {
-    // Simulating API call to fetch details based on the ID
-    fetchDetails(id)
+    // Replace with your API endpoint to fetch the details based on the ID
+    fetch(`http://127.0.0.1:8000/get_details/${id}`)
+      .then((response) => response.json())
       .then((data) => setDetails(data))
-      .catch((error) => console.log(error));
+      .catch((error) => console.error('Error fetching details:', error));
   }, [id]);
 
-  const fetchDetails = (id) => {
-    // Replace this with your actual API call to fetch the details
-    return new Promise((resolve, reject) => {
-      // Simulating a delay
-      setTimeout(() => {
-        const details = { id, title: 'Example Title', description: 'Example Description' };
-        resolve(details);
-      }, 1000);
-    });
-  };
-
   if (!details) {
-    return <div>Loading...</div>;
+    return <p>Loading...</p>;
   }
 
   return (
     <div>
-      <h2>Details Page</h2>
-      <p>ID: {details.id}</p>
-      <p>Title: {details.title}</p>
-      <p>Description: {details.description}</p>
+      <h2>{details.name}</h2>
+      <p>Code: {details.code}</p>
+      <p>Status: {details.status}</p>
+      <p>Number of Copies: {details.noOfCopy}</p>
+      <p>Type: {details.type}</p>
+      <p>Path: <a href={details.path} target="_blank" rel="noopener noreferrer">{details.path}</a></p>
     </div>
   );
 };
